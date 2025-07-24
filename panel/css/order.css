@@ -1,0 +1,127 @@
+/* ==================== Orders Page Clean Modern Style ==================== */
+.orders-container {
+  width: 100%;
+  min-height: 80vh;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(33,21,76,0.10);
+  padding: 32px 28px 24px 28px;
+  margin: 40px auto 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.haut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 18px;
+}
+.haut h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #21154c;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.haut .add-order-btn {
+  min-width: 130px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  background: #21154f;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(33,21,76,0.08);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.haut .add-order-btn:hover {
+  background: #4e2fa5;
+  transform: scale(1.07) translateY(-2px);
+}
+.haut #stockPieChart {
+  max-width: 180px;
+  height: auto;
+  margin-left: 32px;
+}
+
+.bas {
+  margin-top: 0;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 8px rgba(33,21,76,0.06);
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.orders-table thead {
+  background: #f5f5fa;
+}
+.orders-table th, .orders-table td {
+  text-align: left;
+  padding: 16px 18px;
+  font-size: 1rem;
+  border-bottom: 1px solid #ececf6;
+}
+.orders-table th {
+  color: #21154c;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.orders-table tbody tr:hover {
+  background: #f7f6fd;
+  transition: 0.2s;
+}
+
+/* Status badges */
+.status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+}
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+.status.shipped {
+  background: #cce5ff;
+  color: #004085;
+}
+.status.delivered {
+  background: #d4edda;
+  color: #155724;
+}
+.status.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+@media (max-width: 900px) {
+  .orders-container {
+    padding: 12px 4vw 12px 4vw;
+    margin: 16px auto 0 auto;
+  }
+  .haut {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .haut #stockPieChart {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .orders-table th, .orders-table td {
+    padding: 10px 6px;
+    font-size: 0.95rem;
+  }
+}

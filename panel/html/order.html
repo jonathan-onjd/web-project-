@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="../logo/ChatGPT Image Jul 23, 2025, 10_58_27 PM.png" alt="Logo" class="main-logo" />
+            <div class="bouton"><a href="Dashboard.html">Dashboard</a></div>
+            <div class="bouton"><a href="product.html">Product</a></div>
+            <div class="bouton"><a href="order.html">Orders</a></div>
+            <div class="bouton"><a href="setting.html">Settings</a></div>
+        </div>
+        <div class="right">
+            <div class="orders-container">
+                <div class="haut">
+                    <h2>Orders Summary</h2>
+                    <button class="add-order-btn">Add Order</button>
+                    <canvas id="stockPieChart" width="320" height="320" style="margin:24px auto 0 auto;display:block;"></canvas>
+                </div>
+            <div class="bas">
+
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Product</th>
+                            <th>Number</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>John Doe</td>
+                            <td>Smartphone</td>
+                            <td>1</td>
+                            <td>2025-07-22</td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td>$699</td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>Jane Smith</td>
+                            <td>Laptop</td>
+                            <td>2</td>
+                            <td>2025-07-23</td>
+                            <td><span class="status shipped">Shipped</span></td>
+                            <td>$1998</td>
+                        </tr>
+                        <tr>
+                            <td>#003</td>
+                            <td>Michael Smith</td>
+                            <td>Tablet</td>
+                            <td>1</td>
+                            <td>2025-07-20</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                            <td>$499</td>
+                        </tr>
+                        <tr>
+                            <td>#004</td>
+                            <td>Alice Johnson</td>
+                            <td>Headphones</td>
+                            <td>3</td>
+                            <td>2025-07-18</td>
+                            <td><span class="status cancelled">Cancelled</span></td>
+                            <td>$597</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/order.js"></script>
+</body>
+</html>

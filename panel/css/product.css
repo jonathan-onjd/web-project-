@@ -1,0 +1,168 @@
+/* ==================== Mise en page principale de Product ==================== */
+/* Gère la disposition générale de la page produit */
+.container {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    border-radius: 10px;
+}
+
+/* ==================== Section principale à droite ==================== */
+.right {
+    width: 85%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #fff !important;
+    color: #222 !important;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    padding: 24px 18px 18px 18px;
+    min-height: 100vh;
+}
+
+/* ==================== Bloc principal du tableau et des actions ==================== */
+.bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    overflow-x: unset;
+    max-height: unset;
+}
+
+/* ==================== Scroll et style du tableau ==================== */
+.bottom-table-scroll {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: unset;
+    border-radius: 8px;
+    margin-top: -100px;
+}
+
+.bottom-table-scroll table {
+    background: #fff;
+    color: #222;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border: none;
+    width: 100%;
+    font-size: 0.97rem;
+}
+
+.bottom-table-scroll th, .bottom-table-scroll td {
+    background: #fff;
+    color: #222;
+    border: none;
+    padding: 10px 8px;
+}
+
+.bottom-table-scroll th {
+    background: #f5f5fa;
+    color: #21154c;
+    font-weight: 600;
+}
+
+/* ==================== Boutons stylés (Uiverse.io) ==================== */
+.buttons {
+  min-width: 120px;
+  position: relative;
+  cursor: pointer;
+  padding: 12px 17px;
+  border: 0;
+  border-radius: 7px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  background:#21154f;
+  color: rgb(255, 255, 255, 0.66);
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.buttons::before {
+  content: "";
+  width: 70%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  opacity: 0.2;
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.buttons:hover {
+  color: rgb(255, 255, 255, 1);
+  transform: scale(1.1) translateY(-3px);
+}
+
+.buttons:hover::before {
+  opacity: 1;
+}
+
+/* ==================== Barre de recherche et bouton ==================== */
+.bottom input[type="search"] {
+    width: 300px;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.bottom button {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #21154c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.bottom button:hover {
+    background-color: #2c1d6b;
+}
+
+/* ==================== Input et bouton dans la barre d'action ==================== */
+.input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;  
+}
+
+.input input[type="search"] {
+    background: #fff;
+    color: #222;
+    border: 1px solid #d1d1e0;
+    border-radius: 6px;
+    padding: 7px 12px;
+}
+
+.input .buttons {
+    background: #21154f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 18px;
+    margin-left: 10px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.input .buttons:hover {
+    background: #4e2fa5;
+}
+
+/* ==================== Correction : styles spécifiques à product.html ==================== */
+.right.product-page {
+    background: #fff !important;
+    color: #222 !important;
+}

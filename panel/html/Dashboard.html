@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="left">
+            <img src="../logo/ChatGPT Image Jul 23, 2025, 10_58_27 PM.png" alt="Logo" class="main-logo" />
+                <div class="bouton"><a href="Dashboard.html">Dashboard</a></div>
+                <div class="bouton"><a href="product.html">Product</a></div>
+                <div class="bouton"><a href="order.html">Orders</a></div>
+                <div class="bouton"><a href="setting.html">Settings</a></div>
+        </div> 
+        <div class="right">
+            <div class="top big-top">
+                <div class="box big-box"><h2>Total Sales</h2></div>
+                <div class="box big-box"><h2>Orders</h2></div>
+                <div class="box big-box">Low Stock</div>
+                <div class="box big-box">Visitors</div>
+            </div>
+            <div class="middle big-middle">
+                <div class="box1 big-box1">
+                  <h2>Sales Report</h2>
+                  <canvas id="salesChart" width="400" height="200"></canvas>
+                </div>
+                <div class="box2 big-box2">
+                  <h2>Stock Distribution</h2>
+                  <canvas id="stockPieChart" width="320" height="320" style="margin:24px auto 0 auto;display:block;"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
